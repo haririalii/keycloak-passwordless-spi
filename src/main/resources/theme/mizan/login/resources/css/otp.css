@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'IRANSansX';
+    src: url('../fonts/IRANSansX-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'IRANSansX', Arial, RLHHelvetica-Normal, sans-serif;
+    background: #333030;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.otp-form, .phone-form, .profile-form {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 50px 30px;
+    background: #333030;
+    border-radius: 10px;
+    box-shadow: 0 0 35px rgb(251, 121, 0);
+    position: relative;
+    z-index: 999;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.form-header h4, h2 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: white;
+}
+
+.form-header p {
+    font-size: 16px;
+    color: white;
+}
+
+.otp-wrap {
+    display: flex;
+    align-items: center;
+    margin: 45px;
+}
+
+.otp-wrap .code-input {
+    width: 100%;
+    min-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #333030;
+    color: #eae0e0;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    outline: none;
+}
+
+.otp-wrap .code-input:focus {
+    border: 2px solid #fd7a00;
+}
+
+.otp-wrap .code-input:nth-child(n+2) {
+    margin-left: 15px;
+}
+
+.btn-wrap button {
+    width: 100%;
+    padding: 15px 30px;
+    border-radius: 8px;
+    background-color: #fd7a00;
+    color: #fff;
+    border: 2px solid #fd7a00;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn-wrap button:hover {
+    background-color: #e96c00;
+}
+
+.resend-link {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #fb7900;
+    margin-top: 15px;
+}
+
+.resend-link:hover {
+    color: #e96c00;
+}
+
+.credential-wrap, .input-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+
+}
+
+.credential-wrap .input-phone, .input-row input {
+    width: 90%;
+    min-height: 40px;
+    background-color: #333030;
+    border: 2px solid darkgrey;
+    border-radius: 10px;
+    text-align: center;
+    font-size: large;
+    color: white;
+}
+
+.credential-wrap .input-phone:focus {
+    border: 2px solid #fb7900;
+}
+
+.credential-wrap .select-dd {
+    width: 10%;
+    min-height: 40px;
+    background-color: #333030;
+    border: 2px solid darkgrey;
+    border-radius: 10px;
+    text-align: center;
+    color: #eae0e0;
+    margin-right: 5px;
+}
+
+.input-row label {
+    width: 30%;
+    margin: 0 5px;
+    color: #eae0e0;
+}
+.error {
+    color: #f44336;           /* vivid red for text */
+    font-size: 14px;          /* slightly smaller than normal text */
+    margin-top: 5px;          /* small gap above the error line */
+    margin-bottom: 0;         /* collapse any default bottom margin */
+}
